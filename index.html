@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Budget Calculator</title>
+</head>
+<body>
+    <article>
+        <section class="sectionOne">
+
+        
+            <div class="container" >
+                
+                    <h1>Budget Calculator</h1>
+                
+                
+                    <div>
+                        <h3>Balance</h3>
+                        <span id="balance">$0.00</span>
+                    </div>
+                <div class="sec">
+                    <div class="sec-income">
+                    <h3>Income</h3>
+                        <span id="income">$0.00</span>
+                    </div>
+
+
+                    <div class="sec-expense">
+                    <h3>Expense</h3>
+                        <span id="expense">$0.00</span>
+                    </div>
+                </div>
+            <section class="input-section">
+
+            
+                <div class="input-income">
+                    <label>Please Enter Your Income</label>
+                    <input type='number' id='income-amount'placeholder="Enter Amount">
+                   <br>
+                    <button id="Calculate"> Calculate</button>
+
+
+                </div>
+                <div class="input-field">
+                    <label>Please Enter Your Expense</label>
+                    <input type="text" id="expense-name" placeholder="Enter">
+                    <label>Amount</label>
+                    <input type='number'id="expense-amount" placeholder="Enter Amount">
+                    <br>
+                    <button id="add-expense"> Add Expense</button>
+
+                </div>
+            </section>
+
+            <section class="history">
+
+                <div class="his-expense">
+                    <h1>History</h1>
+                    <span id="history-name"></span>
+                    <span id="history-amount"></span>
+                </div>
+
+ 
+
+                
+
+            </section>
+    
+            
+                
+
+
+            </div>
+        </section>
+    </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
