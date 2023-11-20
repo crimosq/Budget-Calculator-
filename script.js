@@ -20,7 +20,7 @@ class BudgetTracker {
     calculateIncome() {
         // Get the income amount from the input field and convert it to a float.
         const incomeInput = document.getElementById('income-amount');
-        const incomeAmount = parseFloat(incomeInput.value);
+        const incomeAmount = parseFloat(incomeInput.value); // parses a value as a string and returns the first number.
 
         // Validate the income amount to ensure it's a number and greater than zero.
         if (!isNaN(incomeAmount) && incomeAmount > 0) {
@@ -39,7 +39,7 @@ class BudgetTracker {
         const expenseAmount = parseFloat(expenseAmountInput.value);
 
         // Validate the expense name and amount.
-        if (!isNaN(expenseAmount) && expenseAmount > 0 && expenseName.trim() !== '') {
+        if (!isNaN(expenseAmount) && expenseAmount > 0 && expenseName !== '') {
             this.totalExpense += expenseAmount;  // Add valid expense amount to total expenses.
             this.updateDisplay();  // Update the display with the new totals.
             this.addToHistory(expenseName, expenseAmount);  // Add the expense to the history.
@@ -69,7 +69,5 @@ class BudgetTracker {
         document.getElementById('expense').textContent = `$${this.totalExpense.toFixed(2)}`;
     }
 }
-
-// Wait for the DOM to fully load before creating an instance of BudgetTracker.
-document.addEventListener('DOMContentLoaded', () => new BudgetTracker());
-
+//creating new instance 
+new BudgetTracker();
